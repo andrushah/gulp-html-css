@@ -1,0 +1,89 @@
+extends common/layout
+
+block content 
+    main.container
+      section.work
+        h1
+          | How Dreamshare works?
+        .howWork
+          .workCard
+            .workCard_description
+              a(href='#') step-1
+              h2
+                | Sed leo enim, condimentum
+              p
+                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet
+                | facilisis.
+          .workCard
+            .workCard_description
+              a(href='#') step-1
+              h2
+                | Morbi velit risus
+              p
+                | Nulla venenatis tempor dui in molestie. Nulla quis dictum purus, sit amet porttitor est.
+          .workCard
+            .workCard_description
+              a(href='#') step-1
+              h2
+                | Sed leo enim, condimentum
+              p
+                | Quisque libero libero, dictum non turpis in, luctus semper lorem. Donec rhoncus a leo sit amet
+                | facilisis.
+      section.partners
+        h1
+          | Meet a partner for your best holiday
+        .person
+          .person-card
+            img(src='./images/Brebley.png' alt='person')
+            h2 Bradley Hunter
+            p Based in Chicago. I love playing tennis and loud music.
+          .person-card.order
+            img(src='./images/Mery.png' alt='person')
+            h2 Marie Bennett
+            p
+              | Currently living in Colorado. Lover of art, languages and travelling.
+          .person-card
+            img(src='./images/Diana.png' alt='person')
+            h2 Diana Wells
+            p
+              | Living in Athens, Greece. I love black and white classics, chillout music and green tea.
+          .person-card.order
+            img(src='./images/Chrish.png' alt='person')
+            h2 Christopher Pierce
+            p
+              | Star Wars fanatic. I have a persistent enthusiasm to create new things.
+        a.showAllPerson(href='#') See other partners
+      section.ideas
+        h1
+          | Discover holiday activity ideas
+        .ideas-list
+          .flex-row
+            .ideas-list__item.ideas-list__item_w30
+              a.sport_link(href='#')
+                | Sports and Activis
+            .ideas-list__item.ideas-list__item_w30
+              a.health_link(href='#')
+                | Wellness and Health
+            .ideas-list__item.ideas-list__item_w30
+              a.extreeme_link(href='#') Extreme Sports and Expeditions
+          .flex-row
+            .ideas-list__item.ideas-list__item_w30
+              a.games_link(href='#')
+                | Games
+            .ideas-list__item.ideas-list__item_w70
+              a.culture_link(href='#')
+                | Culture and Education
+          .flex-row
+            .ideas-list__item.ideas-list__item_w70
+              a.enjoyment_link(href='#')
+                | Enjoyment and Relaxation
+            .ideas-list__item.ideas-list__item_w30
+              a.treveling_link(href='#')
+                | Treveling
+      section.search
+        h1 Crate your holiday activity
+        p
+          | Hi! What are your holiday interests?
+        form
+          input(type='text' placeholder='Enter your insterests')
+          button.search-button  Search partners
